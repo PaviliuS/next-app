@@ -24,7 +24,7 @@ const Details = () => {
   const genresList = filmRetrieve?.data.movie.genres.map((value) => {
     return <GenreItem key={value} text={value} />;
   });
-  const torrentsList = filmRetrieve?.data.movie.torrents.map((item, index) => {
+  const torrentsList = filmRetrieve?.data.movie.torrents?.map((item, index) => {
     return (
       <Torrent
         key={index}
